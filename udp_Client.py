@@ -2,7 +2,7 @@
 
 import socket
 from tkinter import Tk, Frame, Scrollbar, Label, END, Entry, Text, VERTICAL, Button, messagebox
-LocalHost = "您的ip地址"
+LocalHost = "服务端ip地址"
 
 class Client:
     client_socket = None
