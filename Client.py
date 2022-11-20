@@ -82,9 +82,9 @@ class Ui_Dialog(object):
     def SendMessage(self):
         self.client = Client()
         self.client.initialize_socket()
-        data_t = self.labelTem.text()
-        data_w = self.labelWet.text()
-        data_l = self.labelLight.text()
+        data_t = self.lineEditTem.text()
+        data_w = self.lineEditWet.text()
+        data_l = self.lineEditLight.text()
         self.client.clientsocket.sendto(data_t.encode("utf8"), (LocalHost, 8000))
         self.client.clientsocket.sendto(data_w.encode("utf8"), (LocalHost, 8000))
         self.client.clientsocket.sendto(data_l.encode("utf8"), (LocalHost, 8000))
